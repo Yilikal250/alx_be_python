@@ -6,17 +6,18 @@ while True:
     # Match priority to set PriorityMsg
     match Priority:
         case "low":
-            PriorityMsg = task + " is a low priority task. Consider completing it when you have free time."
+            PriorityMsg = f"{task} is a low priority task. Consider completing it when you have free time."
         case "high":
-            PriorityMsg = task + " is a high priority task that requires immediate attention today!"
+            reminder = f"{task} is a high priority task that requires immediate attention today!"
+            PriorityMsg = reminder
         case "medium":
-            PriorityMsg = task + " is a medium priority task."
+            PriorityMsg = f"{task} is a medium priority task."
 
     # Check conditions and print reminder/note accordingly
     if time_bound == "yes" and Priority == "high":
-        print("Reminder: " + PriorityMsg)
+        print(f"Reminder: {PriorityMsg}")
     elif time_bound == "no" and Priority == "low":
-        print("Note: " + PriorityMsg)
+        print(f"Note: {PriorityMsg}")
 
     # Ask user if they want to continue
     choice = input("Do you want to enter another task? (yes/no): ")
