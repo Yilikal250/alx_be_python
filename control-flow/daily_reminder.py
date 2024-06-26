@@ -15,10 +15,9 @@ while True:
 
     # Check conditions and print reminder/note accordingly
     if time_bound == "yes" and Priority == "high":
-        print(f"Reminder: {PriorityMsg}")
+        print("Reminder: ", reminder)
     elif time_bound == "no" and Priority == "low":
         print(f"Note: {PriorityMsg}")
-
     # Ask user if they want to continue
     choice = input("Do you want to enter another task? (yes/no): ")
     if choice.lower() != "yes":
