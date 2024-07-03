@@ -15,7 +15,7 @@ def main():
              itemAdd = input("Add the element you want to put in your shopping list: ")
              shopping_list.append(itemAdd)  
         elif choice == '2':
-            itemRemove = input("Add the element you want to remove from your shopping list: ")
+            itemRemove = input("Enter the item to add: ")
             if len(shopping_list) == 0:
                 print("The list is empty")
                 continue
