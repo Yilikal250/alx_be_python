@@ -11,5 +11,7 @@ temp = float(input("Enter the temperature to convert: "))
 tempchoose=input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 if tempchoose == "F":
    print(convert_to_celsius(temp),"°F")
-else:
+elif tempchoose == "C":
    print(convert_to_fahrenheit(temp),"°C")    
+else:
+    print("Invalid temperature. Please enter a numeric value.")   
