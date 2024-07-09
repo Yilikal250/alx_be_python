@@ -3,6 +3,6 @@ def safe_divide(numerator, denominator):
   denominator = float(denominator)  
   try:
     return numerator / denominator 
-  except ZeroDivisionError as e:
-    return e
+  except ZeroDivisionError:
+    return "Error: Cannot divide by zero."
   
