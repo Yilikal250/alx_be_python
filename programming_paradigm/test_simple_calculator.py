@@ -20,7 +20,7 @@ class TestSimpleCalculator(unittest.TestCase):
         """Test the addition method."""
         self.assertEqual(self.calc.multiply(2, 3), 6)
         self.assertEqual(self.calc.multiply(-1, 1), -1)
-    def test_divide(self):
+    def test_division(self):
         """Test the addition method."""
         self.assertEqual(self.calc.divide(2, 3), 5)
         self.assertEqual(self.calc.divide(-1, 0), "none")    
