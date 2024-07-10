@@ -19,11 +19,9 @@ class Library:
                  if title == book.title:
                     return True   
              return False  
-       def return_book(self,title):
+       def return_book(self):
              for book in self._books:
-                 if title == book.title:
-                    return True   
-             return False    
+                 return  book.title,book.author
                        
 library = Library()
 library.add_book(Book("Brave New World", "Aldous Huxley"))
