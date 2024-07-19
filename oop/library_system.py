@@ -23,12 +23,12 @@ class PrintBook(Book):
 
 
 class Library:
-  books = []
+  def __init__(self):
+        self.books = []
   def add_book(self, book):
       self.books.append(book)
-  @classmethod
-  def list_books(cls):
-        for inst in cls.books:
+  def list_books(self):
+        for inst in self.books:
             print(inst)    
  
       
